@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Estrutura de Arquivos */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Configuração de Módulos (Essencial para Knex + Node) */
+    "target": "es2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+
+    /* Tipagem */
+    "lib": ["es2020"], // Removemos DOM, pois é backend
+    "skipLibCheck": true, // Ignora checagem em node_modules (economiza tempo)
+    "forceConsistentCasingInFileNames": true,
+
+    /* Strictness (Mantendo o padrão alto que você trouxe) */
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true, // Ótimo para evitar erros de array undefined
+
+    /* Outros */
+    "sourceMap": true, // Bom para debug
+    "resolveJsonModule": true // Permite importar arquivos .json
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "knexfile.ts"]
+}
