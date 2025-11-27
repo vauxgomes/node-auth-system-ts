@@ -1,0 +1,32 @@
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log*
+package-lock.json # (Opcional: remova esta linha se você commita o lockfile, o que é recomendado)
+yarn.lock         # (Opcional: mesmo caso acima)
+
+dist/
+build/
+out/
+
+*.tsbuildinfo
+
+.env
+.env.test
+.env.production
+.env.local
+.env.*.local
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+coverage/
+.nyc_output/
